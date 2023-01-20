@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 27, 41);
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("./img/img07.jpg");
+    background-position: center;
+    background-size: cover;
+    mask-repeat: no-repeat;
+ 
+}
+button {
+    background-color: rgb(250, 252, 253);
+    color: rgb(76, 76, 78);
+    border: 2px solid rgb(160, 160, 160);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: rgb(0, 102, 255);
+    color: rgb(238, 245, 245);
+    
+}
+
+button:hover > i{
+    color: rgb(244, 248, 252);
+   
+}
+button i {
+    color: rgb(0, 102, 255);
+    font-weight: bold;
+    pointer-events: none;/* para o icone tambem disparar efeito junto com o botão*/
+    
+}
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+.hide {
+    display: none;
+}
+/*todo header - cabeçalho*/
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: rgb(126, 221, 245);
+    padding: 1.5rem;
+    border-radius: 15px ;
+}
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid white;
+}
+
+/*to do form*/
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+#todo-form p,
+ #edit-form p {
+        margin-bottom: 0.5rem; /*para afastar do formulario*/
+        font-weight: bold;
+    }
+    .form-control {
+        display: flex;
+    
+    }
+    .form-control input{
+        margin-right: .3rem; /*para afastar o botao do input*/
+    }
+    #cacel-edit-btn {
+        margin-top: 1rem;
+    }
+    /* Dividir as listas/*
+     /*to do toolbar*/
+     toolbar {
+        padding: 1rem;
+        border-bottom: 1px solid white;
+        display: flex;
+     }
+     #toolbar h4 {
+        margin-bottom: .5rem;
+        margin-top: 10px;
+     }
+     #search {
+        border-right: 1px solid white;
+        padding-right: 1rem;
+        margin-right: .5rem; /*afastar os elementos*/
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+       
+     }
+     #search form{        
+        display: flex;
+
+     }
+     #serch input {     
+        width: 100%; 
+        margin-right: 0.3rem;
+
+     }
+    #filter { 
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+              
+      
+    }
+#filter-select {
+    flex: 1;    
+    margin: 0rem 1rem 1rem;    
+   
+}
+/* to do list*/
+.todo {
+    display:flex;
+    justify-content: space-around;
+    align-items: column;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+}
+.todo h3{
+    flex: 1;
+    font-size:  0.9rem;
+   
+    
+}
+.todo button{
+    margin-left: 0.4rem;/* para afastar os botões um dos outo*/
+}
+.done {
+    background-color: rgb(54, 45, 179);
+   
+}
+.done h3{
+    color: white;
+ text-decoration: line-through;
+ font-style: italic;
+
+}
